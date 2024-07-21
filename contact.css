@@ -1,0 +1,186 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 72px; 
+    font-weight: bold;
+    color: #ffffff; 
+    animation: neonGlow 1.5s infinite alternate, textPulse 2s infinite alternate;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+}
+
+/* Neon glow effect */
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+        color: #ffffff;
+    }
+    50% {
+        text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000;
+        color: #ff0000;
+    }
+    100% {
+        text-shadow: 0 0 30px #ff0000, 0 0 60px #ff0000, 0 0 90px #ff0000;
+        color: #ffffff;
+    }
+}
+
+/* Text pulse animation */
+@keyframes textPulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 72px;
+    color: #ff0000;
+    font-weight: bold;
+    animation: neonGlow 1.5s infinite alternate, textPulse 2s infinite alternate;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+}
+
+.social-media {
+    margin: 20px auto;
+    color: #ffffff;
+}
+
+.social-icon {
+    width: 100px; 
+    height: auto;
+}
+
+.instagram-handle {
+    font-size: 36px; 
+    margin-top: 20px; 
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.payment-section {
+    margin-top: 40px;
+}
+
+.payment-section h2 {
+    font-size: 28px;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.payment-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.payment-logo {
+    width: 100px; 
+    height: auto;
+}
+
+.payment-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.payment-box {
+    text-align: center;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.payment-icon {
+    width: 80px; 
+    height: auto;
+}
+
+.pay-here {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.back-to-home {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 15px 30px;
+    background-color: #ff0000;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 20px;
+}
+
+.back-button:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-home {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px 40px;
+    background-color: #ff0000;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s, letter-spacing 0.3s;
+    font-size: 24px; 
+    letter-spacing: 1.5px; 
+    display: inline-block;
+}
+
+.back-button:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.1) rotate(5deg); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.back-button:active {
+    transform: scale(1) rotate(0); 
+    background-color: #e60000;
+}
